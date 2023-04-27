@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+/** Grl Styles */
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title-note {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-note {
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.end-note {
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/** Navigation */
+#navbar {
+  background-color: #212529;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.4s;
+  z-index: 99;
+}
+#navbar #not-scroll h1 {
+  color: #e4b200;
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+  margin: 0;
+  text-align: center;
+  font-size: 4rem;
+}
+#navbar #not-scroll h5 {
+  color: #e4b200;
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+  margin: 0px;
+  padding-left: 100px;
+  text-align: center;
+  font-size: 1rem;
+}
+#navbar #scroll {
+  flex-direction: row;
+  justify-content: center;
+  background-color: #212529;
+  border-radius: 30px;
+}
+#navbar #scroll #publish {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 10px;
+  display: none;
+}
+#navbar #scroll #publish #btn-publish {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#navbar #scroll #publish p {
+  font-size: 1.2rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  #navbar #not-scroll h5 {
+    padding-left: 0px;
+  }
+}
+/** Section Categories */
+#categories {
+  padding-top: 200px;
+  height: 100vh;
+}
+#categories .row .col-sm a img {
+  width: 100px;
+}
+#categories #info-categories {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+#categories #info-categories h2 {
+  padding-top: 10px;
+}
+#categories #info-categories h2 span {
+  padding: 10px;
+  border-radius: 1.5rem;
+}
+#categories #info-categories p + p {
+  margin: 5px 0px 20px 0px;
+}/*# sourceMappingURL=style.css.map */
