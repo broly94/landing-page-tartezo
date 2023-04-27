@@ -161,4 +161,17 @@ main #soft-release #date .subtitle {
   #soft-release .d-flex.flex-column.flex-lg-row .d-flex {
     flex-wrap: nowrap;
   }
+}
+/** Footer */
+#footer {
+  background-color: #000;
+  margin-top: 150px;
+}
+#footer #copyright {
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+  font-size: 1.4rem;
+}
+#footer #contact p {
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */
