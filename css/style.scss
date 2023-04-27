@@ -34,6 +34,12 @@ body {
     font-weight: 400;
 }
 
+@media screen and (max-width: 576px) {
+    .title-note {
+        font-size: 2rem;
+    }
+}
+
 /** Navigation */
 
 #navbar {
@@ -71,28 +77,15 @@ body {
     #scroll {
         flex-direction: row;
         justify-content: center;
-        background-color: #212529;
-        border-radius: 30px;
-        #publish {
+        background-color: #fff;
+        border-radius: 100px;
+
+        #btn-publish {
             display: flex;
-            flex-direction: row-reverse;
             justify-content: center;
-            align-items: center;
-            gap: 7px;
-            padding: 10px;
+            text-align: center;
             display: none;
-
-            #btn-publish {
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            }
-
-            p {
-                font-size: 1.2rem;
-                padding: 0px;
-                margin: 0px;
-            }
+            outline: #000;
         }
     }
 }
@@ -113,10 +106,11 @@ main {
     #categories {
         padding-top: 200px;
         .row {
-            .col-sm {
+            div {
+                margin: 0px;
+                padding: 20px;
                 a {
                     img {
-                        width: 100px;
                     }
                 }
             }

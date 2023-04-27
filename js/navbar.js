@@ -1,7 +1,7 @@
 const navbar = document.getElementById('navbar');
 const navbarTitle = document.querySelector('#not-scroll h1');
 const navbarSubtitle = document.getElementById('navbar-subtitle');
-const publish = document.getElementById('publish');
+const publish = document.getElementById('btn-publish');
 
 export default function scrollFunctionNavbar(width) {
 	if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
@@ -19,6 +19,10 @@ export default function scrollFunctionNavbar(width) {
 		navbar.style.paddingRight = '2rem';
 		navbarTitle.style.color = '#000';
 		navbarTitle.style.fontSize = '3rem';
+		publish.style.backgroundColor = 'transparent';
+		publish.style.color = 'transparent';
+		publish.style.outline = '1px solid #000';
+		publish.style.borderRadius = '50%';
 	} else {
 		//* Out scroll */
 		navbarTitle.style.display = 'block';
@@ -28,13 +32,7 @@ export default function scrollFunctionNavbar(width) {
 		navbar.style.flexDirection = 'column';
 		navbarTitle.style.color = '#e4b200';
 		publish.style.display = 'none';
-	}
-
-	if (width.matches) {
-		if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-			navbarTitle.style.display = 'none';
-		}
-	} else {
-		navbarTitle.style.display = 'block';
+		publish.style.backgroundColor = '#212529';
+		publish.style.color = '#212529';
 	}
 }

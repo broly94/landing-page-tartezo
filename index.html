@@ -17,23 +17,20 @@
 		<!-- Navigation-->
 		<nav class="navbar fixed-top" id="navbar">
 			<div id="scroll">
-				<div id="publish">
-					<p class="text-warning">Publicar Anuncio</p>
-					<a href="#" id="btn-publish">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="40"
-							height="40"
-							fill="currentColor"
-							class="bi bi-plus-circle-fill text-warning"
-							viewBox="0 0 16 16"
-						>
-							<path
-								d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
-							/>
-						</svg>
-					</a>
-				</div>
+				<a href="#" class="" id="btn-publish">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="50"
+						height="50"
+						fill="currentColor"
+						class="bi bi-plus-circle-fill text-warning outline border-dark"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+						/>
+					</svg>
+				</a>
 			</div>
 
 			<div id="not-scroll">
@@ -48,49 +45,59 @@
 			<!-- Categories-->
 			<section class="container" id="categories">
 				<div class="row text-center">
-					<div class="col-sm p-5">
+					<div class="col-6 col-md-4 col-lg-3">
 						<a href="#">
-							<img src="./images/real-estate-svgrepo-com.svg" alt="real state" />
+							<img
+								class="p-3"
+								src="./images/real-estate-svgrepo-com.svg"
+								width="90"
+								alt="real state"
+							/>
 						</a>
 					</div>
-					<div class="col-sm p-5">
+					<div class="col-6 col-md-4 col-lg-3">
 						<a href="#">
-							<img src="./images/hospital-svgrepo-com.svg" alt="hospital" />
+							<img class="p-3" src="./images/hospital-svgrepo-com.svg" width="90" alt="hospital" />
 						</a>
 					</div>
-					<div class="col-sm p-5">
+					<div class="col-6 col-md-4 col-lg-3">
 						<a href="#">
 							<img
 								src="./images/energy-industry-energetic-thunderbolt-power-svgrepo-com.svg"
 								alt="energy industry energetic"
+								width="90"
+								class="p-3"
 							/>
 						</a>
 					</div>
-					<div class="col-sm p-5">
+					<div class="col-6 col-md-4 col-lg-3">
 						<a href="#">
-							<img src="./images/law-svgrepo-com.svg" alt="law" />
+							<img class="p-3" src="./images/law-svgrepo-com.svg" width="90" alt="law" />
 						</a>
 					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-sm p-5">
+					<div class="col-6 col-md-4 col-lg-3">
 						<a href="#">
-							<img src="./images/truck-svgrepo-com_1.svg" alt="truck" />
+							<img class="p-3" src="./images/truck-svgrepo-com_1.svg" width="90" alt="truck" />
 						</a>
 					</div>
-					<div class="col-sm p-5">
+					<div class="col-6 col-md-4 col-lg-3">
 						<a href="#">
-							<img src="./images/money-svgrepo-com.svg" alt="money" />
+							<img class="p-3" src="./images/money-svgrepo-com.svg" width="90" alt="money" />
 						</a>
 					</div>
-					<div class="col-sm p-5">
+					<div class="col-6 col-md-4 col-lg-3">
 						<a href="#">
-							<img src="./images/FILMMAKING.svg" alt="filmamaking" />
+							<img class="p-3" src="./images/FILMMAKING.svg" width="90" alt="filmamaking" />
 						</a>
 					</div>
-					<div class="col-sm p-5">
+					<div class="col-6 col-md-4 col-lg-3">
 						<a href="#">
-							<img src="./images/stats-marketing-svgrepo-com.svg" alt="stats marketing" />
+							<img
+								src="./images/stats-marketing-svgrepo-com.svg"
+								width="90"
+								class="p-3"
+								alt="stats marketing"
+							/>
 						</a>
 					</div>
 				</div>
@@ -185,7 +192,7 @@
 				</div>
 				<p class="content-note text-wrap mt-5 mb-5 lh-lg">
 					Todo anuncio que se distribuya en la red debe cumplir con las políticas y términos de uso,
-					además está sujeto a cambios o restricciones por parte del servicio de monitoreo
+					además está sujeto a cambios o restricciones por parte del servicio de monitoreo.
 				</p>
 
 				<p class="content-note text-wrap mt-5 mb-5 lh-lg">
@@ -245,10 +252,10 @@
 			<div id="info" class="d-flex flex-column flex-md-row my-3 gap-3">
 				<div class="d-flex flex-column m-0 p-0 justify-content-center" id="contact">
 					<p class="m-0 text-warning">frontdesk@tartezo.com</p>
-					<p class="m-0 text-warning">(555)555-5555</p>
+					<!-- <p class="m-0 text-warning">(555)555-5555</p> -->
 				</div>
 
-				<div class="d-flex flex-row gap-3" id="social">
+				<div class="d-flex flex-row gap-3 justify-content-center" id="social">
 					<div id="whatapp">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

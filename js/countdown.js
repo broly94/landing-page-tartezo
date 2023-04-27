@@ -1,5 +1,5 @@
 function countdown() {
-	const targetDate = new Date('May 15, 2023 12:05:02').getTime();
+	const targetDate = new Date('May 25, 2023 12:05:02').getTime();
 	const currentDate = new Date().getTime();
 	const difference = targetDate - currentDate;
 
@@ -10,7 +10,7 @@ function countdown() {
 
 	document.getElementById('days').innerHTML = `
       <p class="title">${days}</p>
-      <p class="subtitle">Dias</p>
+      <p class="subtitle">Días</p>
     `;
 	document.getElementById('hour').innerHTML = `
       <p class="title text-center">${hours}</p>
