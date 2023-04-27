@@ -11,7 +11,6 @@
 			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
 			crossorigin="anonymous"
 		/>
-		<!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
 		<title>Tartezo</title>
 	</head>
 	<body>
@@ -194,7 +193,48 @@
 					verificada y formas de contacto confirmadas.
 				</p>
 			</section>
+			<!--Soft Release-->
+			<section class="container" id="soft-release">
+				<h2 class="title-note text-center mt-3">Soft Release</h2>
+
+				<div class="container container-icons bg-warning container rounded mt-5 p-5">
+					<div class="d-flex flex-column flex-lg-row text-center gap-5 justify-content-center p-3">
+						<div
+							id="days"
+							class="text-center d-flex flex-row flex-lg-column justify-content-center align-items-center pl-5"
+						>
+							<p class="title mb-0">17</p>
+							<p class="subtitle mb-0">Días</p>
+						</div>
+
+						<div id="date" class="d-flex flex-column align-items-center">
+							<div
+								class="d-flex flex-column flex-lg-row text-center justify-content-center align-items-center"
+							>
+								<div id="hour" class="d-flex align-items-center">
+									<p class="title text-center mb-0 mr-1">12</p>
+									<span class="title two-points d-none d-lg-block">:</span>
+									<span class="subtitle d-block d-lg-none">Horas</span>
+								</div>
+								<div id="minutes" class="d-flex align-items-center">
+									<p class="text-center title mb-0 mr-1">05</p>
+									<span class="title two-points d-none d-lg-block">:</span>
+									<span class="subtitle d-block d-lg-none">Minutos</span>
+								</div>
+								<div id="second" class="d-flex align-items-center">
+									<p class="text-center title mb-0">02</p>
+									<span class="two-points d-none d-lg-block"></span>
+									<span class="subtitle d-block d-lg-none">Segundos</span>
+								</div>
+							</div>
+							<div class="subtitle text-center">15 de Mayo de 2023</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+
+		<footer class="mt-5">this is my footer</footer>
 
 		<script type="module" src="./js/index.js"></script>
 		<script
@@ -202,5 +242,6 @@
 			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
 			crossorigin="anonymous"
 		></script>
+		<script src="js/countdown.js"></script>
 	</body>
 </html>

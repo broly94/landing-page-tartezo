@@ -116,4 +116,49 @@ main #trash img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+main #soft-release {
+  margin-top: 150px;
+}
+main #soft-release #days .title {
+  font-size: 7rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+}
+main #soft-release #days .subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+}
+main #soft-release #date {
+  width: 100%;
+  max-width: 400px;
+}
+main #soft-release #date .title {
+  font-size: 7rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+}
+main #soft-release #date .subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+}
+
+@media (max-width: 1000px) {
+  main #soft-release #date {
+    width: 100%;
+    max-width: 700px;
+  }
+  #soft-release .d-flex.flex-column.flex-lg-row .d-flex {
+    flex-wrap: nowrap;
+  }
 }/*# sourceMappingURL=style.css.map */
