@@ -10,8 +10,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .title-note {
@@ -42,7 +40,7 @@ body {
 
 /** Navigation */
 
-#navbar {
+.navbar {
     background-color: #212529;
     display: flex;
     flex-direction: column;
@@ -51,11 +49,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    overflow: hidden;
-    transition: 0.4s;
-    z-index: 99;
+    border: none;
 
-    #not-scroll {
+    .not-scroll {
         h1 {
             color: #e4b200;
             font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
@@ -74,25 +70,14 @@ body {
         }
     }
 
-    #scroll {
-        flex-direction: row;
-        justify-content: center;
-        background-color: #fff;
-        border-radius: 100px;
-
-        #btn-publish {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            display: none;
-            outline: #000;
-        }
+    .scroll {
+        display: none;
     }
 }
 
 @media screen and (max-width: 576px) {
-    #navbar {
-        #not-scroll {
+    .navbar {
+        .not-scroll {
             h5 {
                 padding-left: 0px;
             }
@@ -207,4 +192,62 @@ main {
             font-size: 1.2rem;
         }
     }
+}
+
+//** Custom css Javascript scroll or not scroll */
+
+//** Scroll */
+.navbar-scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    gap: 5px;
+    transition: 0.1s;
+    margin-top: 10px;
+}
+
+.navbar-scroll-title {
+    font-size: 3rem;
+    padding-right: 10px;
+    color: #000;
+    padding-top: 5px;
+}
+
+.navbar-scroll-subtitle {
+    display: none;
+}
+
+.navbar-scroll-btn-publish {
+    display: block;
+    background-color: transparent;
+    color: transparent;
+    outline: 1px solid #000;
+    border-radius: 50%;
+}
+
+//** Not Scroll */
+.navbar-not-scroll {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    background-color: #212529;
+    margin-top: 0px;
+}
+
+.navbar-not-scroll-title {
+    font-size: 3rem;
+    color: #e4b200;
+}
+
+.navbar-not-scroll-subtitle {
+    display: block;
+}
+
+.navbar-not-scroll-btn-publish {
+    display: none;
+    background-color: #212529;
+    color: #212529;
 }
