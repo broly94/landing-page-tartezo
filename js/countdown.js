@@ -13,17 +13,17 @@ function countdown() {
       <p class="subtitle">Días</p>
     `;
 	document.getElementById('hour').innerHTML = `
-      <p class="title text-center">${hours}</p>
+      <p class="title text-center">${hours.toString().padStart(2, '0')}</p>
       <span class="title two-points d-none d-lg-block">:</span>
 	  <span class="subtitle d-block d-lg-none">Horas</span>
     `;
 	document.getElementById('minutes').innerHTML = `
-      <p class="text-center title">${minutes}</p>
+      <p class="text-center title">${minutes.toString().padStart(2, '0')}</p>
       <span class="title two-points d-none d-lg-block">:</span>
 	  <span class="subtitle d-block d-lg-none">Minutos</span>
     `;
 	document.getElementById('second').innerHTML = `
-      <p class="text-center title">${seconds}</p>
+      <p class="text-center title">${seconds.toString().padStart(2, '0')}</p>
       <span class="two-points d-none d-lg-block"></span>
 	  <span class="subtitle d-block d-lg-none">Segundos</span>
     `;

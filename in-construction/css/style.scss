@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
+$josefin-font: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+
 body {
     margin: 0;
     padding: 0;
@@ -48,19 +50,18 @@ main {
         }
     }
 
-    /** Soft Release */
-
     .title-construction {
         font-size: 3rem;
         font-weight: 400;
         margin-top: 100px;
     }
 
+    /** Soft Release */
     #soft-release {
         margin-top: 50px;
 
         h2 {
-            font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+            font-family: $josefin-font;
             font-weight: 200;
             font-size: 1.5rem;
         }
@@ -71,7 +72,7 @@ main {
                 font-weight: 500;
                 margin: 0;
                 padding: 0;
-                font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+                font-family: $josefin-font;
             }
 
             .subtitle {
@@ -79,7 +80,7 @@ main {
                 font-weight: 400;
                 margin: 0;
                 padding: 0;
-                font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+                font-family: $josefin-font;
             }
         }
 
@@ -91,7 +92,7 @@ main {
                 font-weight: 500;
                 margin: 0;
                 padding: 0;
-                font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+                font-family: $josefin-font;
             }
 
             .subtitle {
@@ -99,7 +100,7 @@ main {
                 font-weight: 400;
                 margin: 0;
                 padding: 0;
-                font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+                font-family: $josefin-font;
             }
         }
     }
@@ -109,7 +110,6 @@ main {
     main {
         #soft-release {
             #days {
-                padding-left: 0px;
                 .title {
                     font-size: 3.5rem;
                 }
@@ -134,18 +134,12 @@ main {
     }
 }
 
-/** Footer */
-#footer {
-    background-color: #000;
-    margin-top: auto;
-    #copyright {
-        font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
-        font-size: 1.4rem;
-    }
-    #contact {
-        p {
-            font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
-            font-size: 1.2rem;
+@media screen and (max-width: 576px) {
+    main {
+        #soft-release {
+            #days {
+                padding-left: 0px;
+            }
         }
     }
 }
@@ -157,5 +151,21 @@ main {
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+/** Footer */
+#footer {
+    background-color: #000;
+    margin-top: auto;
+    #copyright {
+        font-family: $josefin-font;
+        font-size: 1.4rem;
+    }
+    #contact {
+        p {
+            font-family: $josefin-font;
+            font-size: 1.2rem;
+        }
     }
 }

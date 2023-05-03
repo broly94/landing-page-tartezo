@@ -210,7 +210,6 @@ main {
     main {
         #soft-release {
             #days {
-                padding-left: 0px;
                 .title {
                     font-size: 3.5rem;
                 }
@@ -238,6 +237,9 @@ main {
 @media (max-width: 1000px) {
     main {
         #soft-release {
+            #days {
+                padding-left: 0px;
+            }
             #date {
                 width: 100%;
                 max-width: 700px;
