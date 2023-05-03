@@ -75,6 +75,52 @@ body {
     }
 }
 
+main {
+    #soft-release {
+        margin-top: 150px;
+
+        #days {
+            padding-left: 20px;
+
+            .title {
+                font-size: 5rem;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+                font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+            }
+
+            .subtitle {
+                font-size: 2rem;
+                font-weight: 400;
+                margin: 0;
+                padding: 0;
+                font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+            }
+        }
+
+        #date {
+            width: 100%;
+            max-width: 400px;
+            .title {
+                font-size: 5rem;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+                font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+            }
+
+            .subtitle {
+                font-size: 2rem;
+                font-weight: 400;
+                margin: 0;
+                padding: 0;
+                font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 576px) {
     .navbar {
         .not-scroll {
@@ -122,7 +168,7 @@ main {
 
         #days {
             .title {
-                font-size: 7rem;
+                font-size: 5rem;
                 font-weight: 500;
                 margin: 0;
                 padding: 0;
@@ -142,7 +188,7 @@ main {
             width: 100%;
             max-width: 400px;
             .title {
-                font-size: 7rem;
+                font-size: 5rem;
                 font-weight: 500;
                 margin: 0;
                 padding: 0;
@@ -155,6 +201,35 @@ main {
                 margin: 0;
                 padding: 0;
                 font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576) {
+    main {
+        #soft-release {
+            #days {
+                padding-left: 0px;
+                .title {
+                    font-size: 3rem;
+                }
+
+                .subtitle {
+                    font-size: 1.5rem;
+                }
+            }
+            #date {
+                .title {
+                    font-size: 3rem;
+                }
+                .subtitle {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .subtitle {
+                font-size: 1.5rem;
             }
         }
     }
