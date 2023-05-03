@@ -172,21 +172,21 @@ main #soft-release #date .subtitle {
   font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
 }
 
-@media screen and (max-width: 576) {
+@media screen and (max-width: 576px) {
   main #soft-release #days {
     padding-left: 0px;
   }
   main #soft-release #days .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   main #soft-release #days .subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   main #soft-release #date .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   main #soft-release #date .subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   main #soft-release .subtitle {
     font-size: 1.5rem;
